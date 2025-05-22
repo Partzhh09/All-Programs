@@ -1,0 +1,99 @@
+<html lang="en"></html>
+<head>
+    <title>HTML Forms and Advanced Elements</title>
+</head>
+<body>
+
+    <h1>HTML Forms and Advanced Elements</h1>
+
+    <!-- HTML Form Example -->
+    <h2>HTML Forms</h2>
+    <form action="/submit" method="POST">
+        <!-- Text Input -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <!-- Text Area -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Select Dropdown -->
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+        </select><br><br>
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <button type="button">Click Me</button>
+    </form>
+
+    <hr>
+
+    <!-- HTML5 Global Attributes -->
+    <h2>HTML5 Global Attributes</h2>
+    <p class="intro" id="para1" style="color:blue;" title="This is a tooltip">This paragraph uses HTML5 global attributes such as class, id, style, and title.</p>
+
+    <hr>
+
+    <!-- Advanced HTML5 Input Types -->
+    <h2>Advanced HTML5 Input Types</h2>
+    <form action="/submit" method="POST">
+        <!-- Search Input -->
+        <label for="search">Search:</label>
+        <input type="search" id="search" name="search"><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Date Input -->
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+
+        <!-- Number Input -->
+        <label for="quantity">Quantity (1-10):</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br>
+
+        <!-- Color Picker -->
+        <label for="favcolor">Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor"><br><br>
+
+        <!-- Editable Drop-Down -->
+        <label for="cars">Choose a car:</label>
+        <select id="carDropdown">
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+        </select>
+    </form>
+
+    <hr>
+
+    <!-- Adding Video & Audio -->
+    <h2>Adding Video & Audio</h2>
+
+    <!-- Video Element -->
+    <h3>Adding Video</h3>
+    <video controls width="1500" height="825">
+        <source src="Mr.Boombastic.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+
+    <!-- Audio Element -->
+    <h3>Adding Audio</h3>
+    <center>
+    <audio controls>
+        <source src="Mr.Boombastic.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </center>
+    </audio>
+
+</body>
+</html> 

@@ -1,0 +1,10 @@
+#!C:\Users\krishna\AppData\Local\Programs\Python\Python310\python.exe
+print("Contect-type:text/html")
+print('<html>')
+print('<head>')
+print('<title>Hello world-first CGI program</title>')
+print('</head>')
+print('<body>')
+print('<h2>Hello world! this is my first CGI program</h2>')
+print('</body>')
+print('</html>')

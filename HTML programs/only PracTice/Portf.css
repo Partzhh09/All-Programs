@@ -1,0 +1,97 @@
+html {
+    scroll-behavior: smooth;
+    /* Enable smooth scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.name {
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+}
+
+body {
+    height: 200vh;
+    background-image:
+        linear-gradient(to top, #259aa5 0%, #94b0b3 75%);
+}
+
+.details1 a:hover {
+    color: black;
+    cursor: pointer;
+
+}
+
+.details1 a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #002e39;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform 0.3s ease;
+}
+
+.details1 a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+
+}
+
+.details1 a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    font-family: 'LEMON';
+}
+
+.icon {
+    width: 2.5rem;
+    height: auto;
+    opacity: 55%;
+    
+    transition: transform 1s ease-out;
+}
+
+.icon:hover {
+    box-sizing: border-box;
+    height: 0.5rem;
+    /* box-shadow: 0px 0px 10px; */
+    filter: brightness(0) saturate(100%) invert(1);
+    transition: transform 5s ease-in-out, filter 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 0.4rem;
+}
+
+.p-relative {
+    position: relative;
+    left: 6.5rem;
+    top: -1rem;
+}
+
+@media (max-width:750px) {
+    .name {
+        margin: unset;
+    }
+}
+
+@font-face {
+    font-family: 'LEMON';
+    src: url(LEMONMILK-Medium.ttf);
+}

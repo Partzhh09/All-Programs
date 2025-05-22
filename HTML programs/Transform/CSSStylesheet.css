@@ -1,0 +1,50 @@
+/* CSS for Transforms */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    margin: 50px auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.box:hover {
+    transform: rotate(45deg) scale(1.2);
+}
+
+/* CSS for Transitions */
+.transition-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 50px auto;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.transition-box:hover {
+    background-color: darkblue;
+    transform: scale(1.5);
+}
+
+/* CSS for Animations */
+@keyframes exampleAnimation {
+    0% {
+        background-color: lightgreen;
+        transform: translateX(0);
+    }
+    50% {
+        background-color: yellow;
+        transform: translateX(100px);
+    }
+    100% {
+        background-color: lightgreen;
+        transform: translateX(0);
+    }
+}
+
+.animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 50px auto;
+    animation: exampleAnimation 3s infinite;
+}

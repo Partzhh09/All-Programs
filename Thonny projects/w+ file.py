@@ -1,0 +1,6 @@
+A=open("Parth.txt","w+")
+#print("File NAME is :",A.name)
+#print("File CLOSE or not :",A.closed)
+#print("File MODE :",A.mode)
+A.write("My name is parth")
+A.close()

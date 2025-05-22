@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'LEMON';
+    src: url(./fonts/LEMONMILK-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'carving-soft';
+    src: url(./fonts/MADECarvingSoftPERSONALUSE-Medium.otf);
+}
+
+@font-face {
+    font-family: 'cream';
+    src: url(./fonts/CreamCake.otf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to top, #259aa5 0%, #94b0b3 75%);
+    position: relative;
+
+}
+
+.arrow-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.icon {
+    width: 2.5rem;
+    height: auto;
+    opacity: 55%;
+    font-size: 40px;
+    color: black;
+    transition: transform 1s ease-out;
+}
+
+.icon:hover {
+    box-sizing: border-box;
+    height: 0.5rem;
+    filter: brightness(0) saturate(100%) invert(1);
+    transition: transform 2.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.name {
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+}
+
+.details1 a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+    font-family: 'LEMON';
+}
+
+.details1 a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.details1 a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #002e39;
+    transform: scaleX(0);
+    transform-origin: bottom center;
+    transition: transform 0.3s ease;
+}
+
+.details1 a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.aboutMe {
+    height: 100vh;
+}
+
+#about_me {
+    font-size: 25px;
+}
+
+.aboutFont {
+    font-family: 'cream';
+    font-size: 62px;
+    text-align: center;
+}
+
+.aboutgrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.AboutImg {
+    width: 50%;
+    border-radius: 1.5rem;
+    object-fit: cover;
+    float: right;
+    margin-right: 50px;
+    margin-top: 7rem;
+}
+
+.AboutDTLS {
+    margin-top: 17rem;
+}
+
+.ContactME {
+    height: 100vh;
+}
+
+.contactDTLS {
+    height: 100vh;
+
+}
+
+.house {
+    color: black;
+    opacity: 60%;
+    margin-top: 200px;
+    font-size: 30px;
+
+}
+
+.house:hover {
+    color: white;
+    transition: color 0.3s ease-in;
+}
+
+.downn {
+    color: black;
+    opacity: 60%;
+    margin-top: 200px;
+    font-size: 30px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: blink;
+
+}
+
+.downn:hover {
+    color: white;
+    transition: color 0.3s ease-in;
+    animation: none;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-this-element {
+    animation: name-of-animation 5s infinite;
+}
+
+.Onlycont {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 62px;
+    font-family: 'cream';
+}
+
+.contactDTLS {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+input,
+textarea {
+    width: 15%;
+    height: 5%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea{
+    resize: vertical;
+}
+button {
+    width: 15%;
+    padding: 5px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Keep your previous CSS intact */
+.icon {
+    transition: transform 0.3s ease, opacity 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.name {
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 100vh;
+}
+
+/* Add this class to enable fade-in animation */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

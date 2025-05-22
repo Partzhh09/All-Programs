@@ -1,0 +1,5 @@
+1. Style a paragraph element to have a different font family ,font size and font color.
+
+2. style a form to have custom background color for its input fields and submit button.
+
+3. In your html document and background color to div element center align text within paragraph element.

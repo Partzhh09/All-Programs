@@ -1,0 +1,28 @@
+<collection shelf="New Arrivals">
+<movie title = "Bramhastra">
+<type>3D animation</type>
+<format>DVD</format>
+<year>2022</year>
+<rating>PG</rating>
+<stars>10</stars>
+<description>Talk about a bramhastra</description>
+
+</movie>
+<movie title = "Avtar 2">
+<type>High graphics animation</type>
+<format>DVD</format>
+<year>2022</year>
+<rating>PG</rating>
+<stars>10</stars>
+<description>Talk about a nuture</description>
+
+</movie>
+<movie title = "Sita ramamm">
+<type>Love story</type>
+<format>DVD</format>
+<year>2022</year>
+<rating>PG</rating>
+<stars>8</stars>
+<description>Talk about a Army</description>
+</movie>
+</collection>
